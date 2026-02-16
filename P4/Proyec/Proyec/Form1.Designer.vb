@@ -43,6 +43,9 @@ Partial Class Form1
         Me.Siete = New System.Windows.Forms.Button()
         Me.Cero = New System.Windows.Forms.Button()
         Me.Borrar = New System.Windows.Forms.Button()
+        Me.Punto = New System.Windows.Forms.Button()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -255,12 +258,51 @@ Partial Class Form1
         Me.Borrar.Text = "Borrar"
         Me.Borrar.UseVisualStyleBackColor = True
         '
+        'Punto
+        '
+        Me.Punto.Font = New System.Drawing.Font("Bahnschrift Condensed", 24.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Punto.Location = New System.Drawing.Point(706, 279)
+        Me.Punto.Name = "Punto"
+        Me.Punto.Size = New System.Drawing.Size(74, 62)
+        Me.Punto.TabIndex = 21
+        Me.Punto.Text = "."
+        Me.Punto.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Font = New System.Drawing.Font("Arial", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.RadioButton1.Location = New System.Drawing.Point(44, 310)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(93, 20)
+        Me.RadioButton1.TabIndex = 22
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Numero 1"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Font = New System.Drawing.Font("Arial", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.RadioButton2.Location = New System.Drawing.Point(44, 333)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(93, 20)
+        Me.RadioButton2.TabIndex = 23
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "Numero 2"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SlateBlue
         Me.ClientSize = New System.Drawing.Size(979, 390)
+        Me.Controls.Add(Me.RadioButton2)
+        Me.Controls.Add(Me.RadioButton1)
+        Me.Controls.Add(Me.Punto)
         Me.Controls.Add(Me.Borrar)
         Me.Controls.Add(Me.Cero)
         Me.Controls.Add(Me.Nueve)
@@ -310,4 +352,7 @@ Partial Class Form1
     Friend WithEvents Siete As Button
     Friend WithEvents Cero As Button
     Friend WithEvents Borrar As Button
+    Friend WithEvents Punto As Button
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RadioButton2 As RadioButton
 End Class
