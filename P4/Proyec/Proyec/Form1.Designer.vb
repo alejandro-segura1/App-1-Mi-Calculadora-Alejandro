@@ -50,6 +50,7 @@ Partial Class Form1
         '
         'TextBox1
         '
+        Me.TextBox1.Enabled = False
         Me.TextBox1.Location = New System.Drawing.Point(198, 102)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(240, 20)
@@ -80,6 +81,7 @@ Partial Class Form1
         '
         'TextBox2
         '
+        Me.TextBox2.Enabled = False
         Me.TextBox2.Location = New System.Drawing.Point(198, 173)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(240, 20)
@@ -271,6 +273,7 @@ Partial Class Form1
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Checked = True
         Me.RadioButton1.Font = New System.Drawing.Font("Arial", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.RadioButton1.Location = New System.Drawing.Point(44, 310)
@@ -290,7 +293,6 @@ Partial Class Form1
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(93, 20)
         Me.RadioButton2.TabIndex = 23
-        Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "Numero 2"
         Me.RadioButton2.UseVisualStyleBackColor = True
         '

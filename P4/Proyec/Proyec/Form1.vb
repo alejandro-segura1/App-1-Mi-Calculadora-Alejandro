@@ -35,10 +35,16 @@
 
     Private Sub Dividir_Click(sender As Object, e As EventArgs) Handles Dividir.Click
 
+        Dim Resultado
+
         Dim Numero1 As Double = Double.Parse(activo.Text)
         Dim Numero2 As Double = Double.Parse(TextBox2.Text)
 
-        Dim Resultado As Double = Numero1 / Numero2
+        If Numero2 > 0 Then
+            Resultado = Numero1 / Numero2
+        Else
+            Resultado = "No se puede dividir entre cero"
+        End If
 
         Label4.Text = Resultado.ToString()
 
@@ -98,5 +104,9 @@
 
     Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
         activo = TextBox2
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
     End Sub
 End Class
